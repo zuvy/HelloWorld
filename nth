@@ -1,0 +1,1432 @@
+[1mdiff --git a/C#/.vs/WingtipToys/v14/.suo b/C#/.vs/WingtipToys/v14/.suo[m
+[1mdeleted file mode 100644[m
+[1mindex 517f7fc..0000000[m
+Binary files a/C#/.vs/WingtipToys/v14/.suo and /dev/null differ
+[1mdiff --git a/C#/UpgradeLog.htm b/C#/UpgradeLog.htm[m
+[1mdeleted file mode 100644[m
+[1mindex edae65b..0000000[m
+Binary files a/C#/UpgradeLog.htm and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/App_Data/wingtiptoys.mdf b/C#/WingtipToys/App_Data/wingtiptoys.mdf[m
+[1mindex 28cec7a..a544f79 100644[m
+Binary files a/C#/WingtipToys/App_Data/wingtiptoys.mdf and b/C#/WingtipToys/App_Data/wingtiptoys.mdf differ
+[1mdiff --git a/C#/WingtipToys/App_Data/wingtiptoys_log.ldf b/C#/WingtipToys/App_Data/wingtiptoys_log.ldf[m
+[1mindex 5c5a232..59bbf2b 100644[m
+Binary files a/C#/WingtipToys/App_Data/wingtiptoys_log.ldf and b/C#/WingtipToys/App_Data/wingtiptoys_log.ldf differ
+[1mdiff --git a/C#/WingtipToys/ProductDetails.aspx b/C#/WingtipToys/ProductDetails.aspx[m
+[1mindex 9d15b76..e22c574 100644[m
+[1m--- a/C#/WingtipToys/ProductDetails.aspx[m
+[1m+++ b/C#/WingtipToys/ProductDetails.aspx[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-<%@ Page Title="Product Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" [m
+[32m+[m[32m﻿<%@ Page Title="Product Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"[m[41m [m
+          CodeBehind="ProductDetails.aspx.cs" Inherits="WingtipToys.ProductDetails" %>[m
+ <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">[m
+     <asp:FormView ID="productDetail" runat="server" ItemType="WingtipToys.Models.Product" SelectMethod ="GetProduct" RenderOuterTable="false">[m
+[36m@@ -10,7 +10,6 @@[m
+             <table>[m
+                 <tr>[m
+                     <td>[m
+[31m-                        <!-- Don't panic! Just a comment for a git tutorial-->[m
+                         <img src="/Catalog/Images/<%#:Item.ImagePath %>" style="border:solid; height:300px" alt="<%#:Item.ProductName %>"/>[m
+                     </td>[m
+                     <td>&nbsp;</td>  [m
+[36m@@ -26,5 +25,4 @@[m
+             </table>[m
+         </ItemTemplate>[m
+     </asp:FormView>[m
+[31m-    <!-- yet again, adding comments for git tutorial purposes-->[m
+[31m-</asp:Content>[m
+[32m+[m[32m</asp:Content>[m
+\ No newline at end of file[m
+[1mdiff --git a/C#/WingtipToys/Site.Master b/C#/WingtipToys/Site.Master[m
+[1mindex 7f15a01..f9eaa39 100644[m
+[1m--- a/C#/WingtipToys/Site.Master[m
+[1m+++ b/C#/WingtipToys/Site.Master[m
+[36m@@ -1,7 +1,6 @@[m
+[31m-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WingtipToys.SiteMaster" %>[m
+[32m+[m[32m﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WingtipToys.SiteMaster" %>[m
+ [m
+ <!DOCTYPE html>[m
+[31m-<!-- These are some changes I'm making for a git tutorial -->[m
+ [m
+ <html lang="en">[m
+ <head runat="server">[m
+[36m@@ -15,8 +14,6 @@[m
+     <webopt:bundlereference runat="server" path="~/Content/css" />[m
+     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />[m
+ [m
+[31m-<!-- Adding another comment here for the git tutorial -->[m
+[31m-[m
+ </head>[m
+ <body>[m
+     <form runat="server">[m
+[1mdiff --git a/C#/WingtipToys/bin/Antlr3.Runtime.dll b/C#/WingtipToys/bin/Antlr3.Runtime.dll[m
+[1mdeleted file mode 100644[m
+[1mindex 34bd478..0000000[m
+Binary files a/C#/WingtipToys/bin/Antlr3.Runtime.dll and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/Antlr3.Runtime.pdb b/C#/WingtipToys/bin/Antlr3.Runtime.pdb[m
+[1mdeleted file mode 100644[m
+[1mindex 315edcf..0000000[m
+Binary files a/C#/WingtipToys/bin/Antlr3.Runtime.pdb and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/AspNet.ScriptManager.bootstrap.dll b/C#/WingtipToys/bin/AspNet.ScriptManager.bootstrap.dll[m
+[1mdeleted file mode 100644[m
+[1mindex 8f6eb63..0000000[m
+Binary files a/C#/WingtipToys/bin/AspNet.ScriptManager.bootstrap.dll and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/AspNet.ScriptManager.jQuery.dll b/C#/WingtipToys/bin/AspNet.ScriptManager.jQuery.dll[m
+[1mdeleted file mode 100644[m
+[1mindex d88264e..0000000[m
+Binary files a/C#/WingtipToys/bin/AspNet.ScriptManager.jQuery.dll and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/Elmah.dll b/C#/WingtipToys/bin/Elmah.dll[m
+[1mdeleted file mode 100644[m
+[1mindex 1851d9a..0000000[m
+Binary files a/C#/WingtipToys/bin/Elmah.dll and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/EntityFramework.SqlServer.dll b/C#/WingtipToys/bin/EntityFramework.SqlServer.dll[m
+[1mdeleted file mode 100644[m
+[1mindex 37fcbe5..0000000[m
+Binary files a/C#/WingtipToys/bin/EntityFramework.SqlServer.dll and /dev/null differ
+[1mdiff --git a/C#/WingtipToys/bin/EntityFramework.SqlServer.xml b/C#/WingtipToys/bin/EntityFramework.SqlServer.xml[m
+[1mdeleted file mode 100644[m
+[1mindex 4daf543..0000000[m
+[1m--- a/C#/WingtipToys/bin/EntityFramework.SqlServer.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,1877 +0,0 @@[m
+[31m-<?xml version="1.0"?>[m
+[31m-<doc>[m
+[31m-    <assembly>[m
+[31m-        <name>EntityFramework.SqlServer</name>[m
+[31m-    </assembly>[m
+[31m-    <members>[m
+[31m-        <member name="T:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy">[m
+[31m-            <summary>[m
+[31m-            An <see cref="T:System.Data.Entity.Infrastructure.IDbExecutionStrategy"/> that retries actions that throw exceptions caused by SQL Azure transient failures.[m
+[31m-            </summary>[m
+[31m-            <remarks>[m
+[31m-            This execution strategy will retry the operation on <see cref="T:System.TimeoutException"/> and <see cref="T:System.Data.SqlClient.SqlException"/>[m
+[31m-            if the <see cref="P:System.Data.SqlClient.SqlException.Errors"/> contains any of the following error numbers:[m
+[31m-            40613, 40501, 40197, 10929, 10928, 10060, 10054, 10053, 233, 64 and 20[m
+[31m-            </remarks>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy.#ctor">[m
+[31m-            <summary>[m
+[31m-            Creates a new instance of <see cref="T:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy"/>.[m
+[31m-            </summary>[m
+[31m-            <remarks>[m
+[31m-            The default retry limit is 5, which means that the total amount of time spent between retries is 26 seconds plus the random factor.[m
+[31m-            </remarks>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy.#ctor(System.Int32,System.TimeSpan)">[m
+[31m-            <summary>[m
+[31m-            Creates a new instance of <see cref="T:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy"/> with the specified limits for[m
+[31m-            number of retries and the delay between retries.[m
+[31m-            </summary>[m
+[31m-            <param name="maxRetryCount"> The maximum number of retry attempts. </param>[m
+[31m-            <param name="maxDelay"> The maximum delay in milliseconds between retries. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlAzureExecutionStrategy.ShouldRetryOn(System.Exception)">[m
+[31m-            <inheritdoc/>[m
+[31m-        </member>[m
+[31m-        <member name="T:System.Data.Entity.SqlServer.SqlFunctions">[m
+[31m-            <summary>[m
+[31m-            Contains function stubs that expose SqlServer methods in Linq to Entities.[m
+[31m-            </summary>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.ChecksumAggregate(System.Collections.Generic.IEnumerable{System.Int32})">[m
+[31m-            <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>[m
+[31m-            <returns>The checksum computed from the input collection.</returns>[m
+[31m-            <param name="arg">The collection of values over which the checksum is computed.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.ChecksumAggregate(System.Collections.Generic.IEnumerable{System.Nullable{System.Int32}})">[m
+[31m-            <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>[m
+[31m-            <returns>The checksum computed from the input collection.</returns>[m
+[31m-            <param name="arg">The collection of values over which the checksum is computed.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Ascii(System.String)">[m
+[31m-            <summary>Returns the ASCII code value of the left-most character of a character expression.</summary>[m
+[31m-            <returns>The ASCII code of the first character in the input string.</returns>[m
+[31m-            <param name="arg">A valid string.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Char(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the character that corresponds to the specified integer ASCII value.</summary>[m
+[31m-            <returns>The character that corresponds to the specified ASCII value.</returns>[m
+[31m-            <param name="arg">An ASCII code.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.String,System.String)">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>The starting position of  target  if it is found in  toSearch .</returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.Byte[],System.Byte[])">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>The starting position of  target  if it is found in  toSearch .</returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.String,System.String,System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>The starting position of  target  if it is found in  toSearch .</returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-            <param name="startLocation">The character position in  toSearch  where searching begins.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.Byte[],System.Byte[],System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>The starting position of  target  if it is found in  toSearch .</returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-            <param name="startLocation">The character position in  toSearch  where searching begins.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.String,System.String,System.Nullable{System.Int64})">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>[m
+[31m-            A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> value that is the starting position of  target  if it is found in  toSearch .[m
+[31m-            </returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-            <param name="startLocation">The character position in  toSearch  where searching begins.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CharIndex(System.Byte[],System.Byte[],System.Nullable{System.Int64})">[m
+[31m-            <summary>Returns the starting position of one expression found within another expression.</summary>[m
+[31m-            <returns>The starting position of  target  if it is found in  toSearch .</returns>[m
+[31m-            <param name="toSearch">The string expression to be searched.</param>[m
+[31m-            <param name="target">The string expression to be found.</param>[m
+[31m-            <param name="startLocation">The character position in  toSearch  at which searching begins.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Difference(System.String,System.String)">[m
+[31m-            <summary>Returns an integer value that indicates the difference between the SOUNDEX values of two character expressions.</summary>[m
+[31m-            <returns>The SOUNDEX difference between the two strings.</returns>[m
+[31m-            <param name="string1">The first string.</param>[m
+[31m-            <param name="string2">The second string.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.NChar(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the Unicode character with the specified integer code, as defined by the Unicode standard.</summary>[m
+[31m-            <returns>The character that corresponds to the input character code.</returns>[m
+[31m-            <param name="arg">A character code.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.PatIndex(System.String,System.String)">[m
+[31m-            <summary>Returns the starting position of the first occurrence of a pattern in a specified expression, or zeros if the pattern is not found, on all valid text and character data types.</summary>[m
+[31m-            <returns>The starting character position where the string pattern was found.</returns>[m
+[31m-            <param name="stringPattern">A string pattern to search for.</param>[m
+[31m-            <param name="target">The string to search.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.QuoteName(System.String)">[m
+[31m-            <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>[m
+[31m-            <returns>The original string with brackets added.</returns>[m
+[31m-            <param name="stringArg">The expression that quote characters will be added to.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.QuoteName(System.String,System.String)">[m
+[31m-            <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>[m
+[31m-            <returns>The original string with the specified quote characters added.</returns>[m
+[31m-            <param name="stringArg">The expression that quote characters will be added to.</param>[m
+[31m-            <param name="quoteCharacter">The one-character string to use as the delimiter. It can be a single quotation mark ( ' ), a left or right bracket ( [ ] ), or a double quotation mark ( " ). If quote_character is not specified, brackets are used.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Replicate(System.String,System.Nullable{System.Int32})">[m
+[31m-            <summary>Repeats a string value a specified number of times.</summary>[m
+[31m-            <returns>The target string, repeated the number of times specified by  count .</returns>[m
+[31m-            <param name="target">A valid string.</param>[m
+[31m-            <param name="count">The value that specifies how many time to repeat  target .</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.SoundCode(System.String)">[m
+[31m-            <summary>Converts an alphanumeric string to a four-character (SOUNDEX) code to find similar-sounding words or names.</summary>[m
+[31m-            <returns>The SOUNDEX code of the input string.</returns>[m
+[31m-            <param name="arg">A valid string.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Space(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns a string of repeated spaces.</summary>[m
+[31m-            <returns>A string that consists of the specified number of spaces.</returns>[m
+[31m-            <param name="arg1">The number of spaces. If negative, a null string is returned.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The numeric input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Double},System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The numeric input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-            <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Decimal},System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-            <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The numeric input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-            <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>[m
+[31m-            <param name="decimalArg">The number of places to the right of the decimal point.  decimal  must be less than or equal to 16. If  decimal  is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.StringConvert(System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns character data converted from numeric data.</summary>[m
+[31m-            <returns>The input expression converted to a string.</returns>[m
+[31m-            <param name="number">A numeric expression.</param>[m
+[31m-            <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>[m
+[31m-            <param name="decimalArg">The number of places to the right of the decimal point.  decimal  must be less than or equal to 16. If  decimal  is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Stuff(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">[m
+[31m-            <summary>Inserts a string into another string. It deletes a specified length of characters in the target string at the start position and then inserts the second string into the target string at the start position.</summary>[m
+[31m-            <returns>A string consisting of the two strings.</returns>[m
+[31m-            <param name="stringInput">The target string.</param>[m
+[31m-            <param name="start">The character position in  stringinput  where the replacement string is to be inserted.</param>[m
+[31m-            <param name="length">The number of characters to delete from  stringInput . If  length  is longer than  stringInput , deletion occurs up to the last character in  stringReplacement .</param>[m
+[31m-            <param name="stringReplacement">The substring to be inserted into  stringInput .</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Unicode(System.String)">[m
+[31m-            <summary>Returns the integer value, as defined by the Unicode standard, for the first character of the input expression.</summary>[m
+[31m-            <returns>The character code for the first character in the input string.</returns>[m
+[31m-            <param name="arg">A valid string.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Acos(System.Nullable{System.Double})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>[m
+[31m-            <returns>The angle, in radians, defined by the input cosine value.</returns>[m
+[31m-            <param name="arg1">The cosine of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Acos(System.Nullable{System.Decimal})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg1">The cosine of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Asin(System.Nullable{System.Double})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg">The sine of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Asin(System.Nullable{System.Decimal})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg">The sine of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Atan(System.Nullable{System.Double})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg">The tangent of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Atan(System.Nullable{System.Decimal})">[m
+[31m-            <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg">The tangent of an angle.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Atan2(System.Nullable{System.Double},System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg1">The y-coordinate of a point.</param>[m
+[31m-            <param name="arg2">The x-coordinate of a point.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Atan2(System.Nullable{System.Decimal},System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>[m
+[31m-            <returns>An angle, measured in radians.</returns>[m
+[31m-            <param name="arg1">The y-coordinate of a point.</param>[m
+[31m-            <param name="arg2">The x-coordinate of a point.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Cos(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the trigonometric cosine of the specified angle, in radians, in the specified expression.</summary>[m
+[31m-            <returns>The trigonometric cosine of the specified angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Cos(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the trigonometric cosine of the specified angle, in radians, in the specified expression.</summary>[m
+[31m-            <returns>The trigonometric cosine of the specified angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Cot(System.Nullable{System.Double})">[m
+[31m-            <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>[m
+[31m-            <returns>The trigonometric cotangent of the specified angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Cot(System.Nullable{System.Decimal})">[m
+[31m-            <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>[m
+[31m-            <returns>The trigonometric cotangent of the specified angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Degrees(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>[m
+[31m-            <returns>The specified angle converted to degrees.</returns>[m
+[31m-            <param name="arg1">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Degrees(System.Nullable{System.Int64})">[m
+[31m-            <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>[m
+[31m-            <returns>The specified angle converted to degrees.</returns>[m
+[31m-            <param name="arg1">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Degrees(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>[m
+[31m-            <returns>The specified angle converted to degrees.</returns>[m
+[31m-            <param name="arg1">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Degrees(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>[m
+[31m-            <returns>The specified angle converted to degrees.</returns>[m
+[31m-            <param name="arg1">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Exp(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the exponential value of the specified float expression.</summary>[m
+[31m-            <returns>The constant e raised to the power of the input value.</returns>[m
+[31m-            <param name="arg">The input value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Exp(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the exponential value of the specified float expression.</summary>[m
+[31m-            <returns>The constant e raised to the power of the input value.</returns>[m
+[31m-            <param name="arg">The input value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Log(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the natural logarithm of the specified input value.</summary>[m
+[31m-            <returns>The natural logarithm of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Log(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the natural logarithm of the specified input value.</summary>[m
+[31m-            <returns>The natural logarithm of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Log10(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the base-10 logarithm of the specified input value.</summary>[m
+[31m-            <returns>The base-10 logarithm of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Log10(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the base-10 logarithm of the specified input value.</summary>[m
+[31m-            <returns>The base-10 logarithm of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Pi">[m
+[31m-            <summary>Returns the constant value of pi.</summary>[m
+[31m-            <returns>The numeric value of pi.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Radians(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>[m
+[31m-            <returns>The radian measure of the specified angle.</returns>[m
+[31m-            <param name="arg">The angle, measured in degrees</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Radians(System.Nullable{System.Int64})">[m
+[31m-            <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>[m
+[31m-            <returns>The radian measure of the specified angle.</returns>[m
+[31m-            <param name="arg">The angle, measured in degrees</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Radians(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>[m
+[31m-            <returns>The radian measure of the specified angle.</returns>[m
+[31m-            <param name="arg">The angle, measured in degrees.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Radians(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>[m
+[31m-            <returns>The radian measure of the specified angle.</returns>[m
+[31m-            <param name="arg">The angle, measured in degrees.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Rand">[m
+[31m-            <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>[m
+[31m-            <returns>The pseudo-random value.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Rand(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>[m
+[31m-            <returns>The pseudo-random value.</returns>[m
+[31m-            <param name="seed">The seed value. If  seed  is not specified, the SQL Server Database Engine assigns a seed value at random. For a specified seed value, the result returned is always the same.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sign(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>[m
+[31m-            <returns>The sign of the input expression.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sign(System.Nullable{System.Int64})">[m
+[31m-            <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>[m
+[31m-            <returns>The sign of the input expression.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sign(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>[m
+[31m-            <returns>The sign of the input expression.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sign(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>[m
+[31m-            <returns>The sign of the input expression.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sin(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the trigonometric sine of the specified angle.</summary>[m
+[31m-            <returns>The trigonometric sine of the input expression.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Sin(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the trigonometric sine of the specified angle.</summary>[m
+[31m-            <returns>The trigonometric sine of the input expression.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.SquareRoot(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the square root of the specified number.</summary>[m
+[31m-            <returns>The square root of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.SquareRoot(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the square root of the specified number.</summary>[m
+[31m-            <returns>The square root of the input value.</returns>[m
+[31m-            <param name="arg">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Square(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the square of the specified number.</summary>[m
+[31m-            <returns>The square of the input value.</returns>[m
+[31m-            <param name="arg1">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Square(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the square of the specified number.</summary>[m
+[31m-            <returns>The square of the input value.</returns>[m
+[31m-            <param name="arg1">A numeric expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Tan(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the trigonometric tangent of the input expression.</summary>[m
+[31m-            <returns>The tangent of the input angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Tan(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the trigonometric tangent of the input expression.</summary>[m
+[31m-            <returns>The tangent of the input angle.</returns>[m
+[31m-            <param name="arg">An angle, measured in radians.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns a new datetime value based on adding an interval to the specified date.</summary>[m
+[31m-            <returns>The new date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to increment. </param>[m
+[31m-            <param name="number">The value used to increment a date by a specified amount.</param>[m
+[31m-            <param name="date">The date to increment.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns a new time span value based on adding an interval to the specified time span.</summary>[m
+[31m-            <returns>The new time span.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to increment.</param>[m
+[31m-            <param name="number">The value used to increment a date by a specified amount.</param>[m
+[31m-            <param name="time">The time span to increment.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns a new date value based on adding an interval to the specified date.</summary>[m
+[31m-            <returns>The new point in time, expressed as a date and time of day, relative to Coordinated Universal Time (UTC).</returns>[m
+[31m-            <param name="datePartArg">The part of the date to increment.</param>[m
+[31m-            <param name="number">The value used to increment a date by a specified amount.</param>[m
+[31m-            <param name="dateTimeOffsetArg">The date to increment.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.String)">[m
+[31m-            <summary>Returns a new datetime value based on adding an interval to the specified date.</summary>[m
+[31m-            <returns>[m
+[31m-            A <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTime" /> value that is the new date.[m
+[31m-            </returns>[m
+[31m-            <param name="datePartArg">The part of the date to increment.</param>[m
+[31m-            <param name="number">The value used to increment a date by a specified amount.</param>[m
+[31m-            <param name="date">The date to increment.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The value specifying the number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.String)">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.String)">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.String)">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.String,System.String)">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two Dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>[m
+[31m-            <returns>The number of time intervals between the two dates.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="startDate">The first date.</param>[m
+[31m-            <param name="endDate">The second date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateName(System.String,System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns a character string that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified part of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateName(System.String,System.String)">[m
+[31m-            <summary>Returns a character string that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified part of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateName(System.String,System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns a character string that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified part of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DateName(System.String,System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns a character string that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified part of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DatePart(System.String,System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns an integer that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The the specified datepart of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to return the value.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DatePart(System.String,System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns an integer that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified datepart of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to return the value.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DatePart(System.String,System.String)">[m
+[31m-            <summary>Returns an integer that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified datepart of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to return the value.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DatePart(System.String,System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns an integer that represents the specified datepart of the specified date.</summary>[m
+[31m-            <returns>The specified datepart of the specified date.</returns>[m
+[31m-            <param name="datePartArg">The part of the date to return the value.</param>[m
+[31m-            <param name="date">The date.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.GetDate">[m
+[31m-            <summary>Returns the current database system timestamp as a datetime value without the database time zone offset. This value is derived from the operating system of the computer on which the instance of SQL Server is running.</summary>[m
+[31m-            <returns>The current database timestamp.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.GetUtcDate">[m
+[31m-            <summary>Returns the current database system timestamp as a datetime value. The database time zone offset is not included. This value represents the current UTC time (Coordinated Universal Time). This value is derived from the operating system of the computer on which the instance of SQL Server is running.</summary>[m
+[31m-            <returns>The current database UTC timestamp.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.String)">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Byte[])">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.DataLength(System.Nullable{System.Guid})">[m
+[31m-            <summary>Returns the number of bytes used to represent any expression.</summary>[m
+[31m-            <returns>The number of bytes in the input value.</returns>[m
+[31m-            <param name="arg">The value to be examined for data length.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.String)">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Byte[])">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The character array for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Guid})">[m
+[31m-            <summary>Returns the checksum value computed over the input argument.</summary>[m
+[31m-            <returns>The checksum computed over the input value.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Boolean},System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Double},System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Decimal},System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.String,System.String)">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Byte[],System.Byte[])">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The character array for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The character array for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Guid},System.Nullable{System.Guid})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.String,System.String,System.String)">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Byte[],System.Byte[],System.Byte[])">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The character array for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The character array for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The character array for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.Checksum(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid})">[m
+[31m-            <summary>Returns the checksum value computed over the input arguments.</summary>[m
+[31m-            <returns>The checksum computed over the input values.</returns>[m
+[31m-            <param name="arg1">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg2">The value for which the checksum is calculated.</param>[m
+[31m-            <param name="arg3">The value for which the checksum is calculated.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CurrentTimestamp">[m
+[31m-            <summary>Returns the current date and time. </summary>[m
+[31m-            <returns>The current date and time.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.CurrentUser">[m
+[31m-            <summary>Returns the name of the current user.</summary>[m
+[31m-            <returns>The name of the current user.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.HostName">[m
+[31m-            <summary>Returns the workstation name.</summary>[m
+[31m-            <returns>The name of the workstation.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.UserName(System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns a database user name corresponding to a specified identification number.</summary>[m
+[31m-            <returns>The user name.</returns>[m
+[31m-            <param name="arg">A user ID.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.UserName">[m
+[31m-            <summary>Returns a database user name corresponding to a specified identification number.</summary>[m
+[31m-            <returns>The user name.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.IsNumeric(System.String)">[m
+[31m-            <summary>Indicates whether the input value is a valid numeric type.</summary>[m
+[31m-            <returns>1 if the input expression is a valid numeric data type; otherwise, 0.</returns>[m
+[31m-            <param name="arg">A string expression.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlFunctions.IsDate(System.String)">[m
+[31m-            <summary>Indicates whether the input value is a valid date or time.</summary>[m
+[31m-            <returns>1 if the input expression is a valid date or time value of datetime or smalldatetime data types; otherwise, 0.</returns>[m
+[31m-            <param name="arg">The tested value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="T:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator">[m
+[31m-            <summary>[m
+[31m-            Provider to convert provider agnostic migration operations into SQL commands[m
+[31m-            that can be run against a Microsoft SQL Server database.[m
+[31m-            </summary>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Collections.Generic.IEnumerable{System.Data.Entity.Migrations.Model.MigrationOperation},System.String)">[m
+[31m-            <summary>[m
+[31m-            Converts a set of migration operations into Microsoft SQL Server specific SQL.[m
+[31m-            </summary>[m
+[31m-            <param name="migrationOperations"> The operations to be converted. </param>[m
+[31m-            <param name="providerManifestToken"> Token representing the version of SQL Server being targeted (i.e. "2005", "2008"). </param>[m
+[31m-            <returns> A list of SQL statements to be executed to perform the migration operations. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.GenerateProcedureBody(System.Collections.Generic.ICollection{System.Data.Entity.Core.Common.CommandTrees.DbModificationCommandTree},System.String,System.String)">[m
+[31m-            <summary>[m
+[31m-            Generates the SQL body for a stored procedure.[m
+[31m-            </summary>[m
+[31m-            <param name="commandTrees">The command trees representing the commands for an insert, update or delete operation.</param>[m
+[31m-            <param name="rowsAffectedParameter">The rows affected parameter name.</param>[m
+[31m-            <param name="providerManifestToken">The provider manifest token.</param>[m
+[31m-            <returns>The SQL body for the stored procedure.</returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.UpdateDatabaseOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified update database operation which represents applying a series of migrations.[m
+[31m-            The generated script is idempotent, meaning it contains conditional logic to check if individual migrations [m
+[31m-            have already been applied and only apply the pending ones.[m
+[31m-            </summary>[m
+[31m-            <param name="updateDatabaseOperation">The update database operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.MigrationOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.MigrationOperation"/>.[m
+[31m-            Allows derived providers to handle additional operation types.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="migrationOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.CreateConnection">[m
+[31m-            <summary>[m
+[31m-            Creates an empty connection for the current provider.[m
+[31m-            Allows derived providers to use connection other than <see cref="T:System.Data.SqlClient.SqlConnection"/>.[m
+[31m-            </summary>[m
+[31m-            <returns> An empty connection for the current provider. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.CreateProcedureOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified create procedure operation.[m
+[31m-            </summary>[m
+[31m-            <param name="createProcedureOperation">The create procedure operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AlterProcedureOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified alter procedure operation.[m
+[31m-            </summary>[m
+[31m-            <param name="alterProcedureOperation">The alter procedure operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropProcedureOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified drop procedure operation.[m
+[31m-            </summary>[m
+[31m-            <param name="dropProcedureOperation">The drop procedure operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.CreateTableOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.CreateTableOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="createTableOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AlterTableOperation)">[m
+[31m-            <summary>[m
+[31m-            Override this method to generate SQL when the definition of a table or its attributes are changed.[m
+[31m-            The default implementation of this method does nothing.[m
+[31m-            </summary>[m
+[31m-            <param name="alterTableOperation"> The operation describing changes to the table. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.GenerateMakeSystemTable(System.Data.Entity.Migrations.Model.CreateTableOperation,System.Data.Entity.Migrations.Utilities.IndentedTextWriter)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to mark a table as a system table.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="createTableOperation"> The table to mark as a system table. </param>[m
+[31m-            <param name="writer"> The <see cref="T:System.Data.Entity.Migrations.Utilities.IndentedTextWriter"/> to write the generated SQL to. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.GenerateCreateSchema(System.String)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to create a database schema.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="schema"> The name of the schema to create. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AddForeignKeyOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.AddForeignKeyOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="addForeignKeyOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropForeignKeyOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.DropForeignKeyOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="dropForeignKeyOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.CreateIndexOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.CreateIndexOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="createIndexOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropIndexOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.DropIndexOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="dropIndexOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AddPrimaryKeyOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.AddPrimaryKeyOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="addPrimaryKeyOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropPrimaryKeyOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.DropPrimaryKeyOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="dropPrimaryKeyOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AddColumnOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.AddColumnOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="addColumnOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropColumnOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.DropColumnOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="dropColumnOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.AlterColumnOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.AlterColumnOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="alterColumnOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.DropDefaultConstraint(System.String,System.String,System.Data.Entity.Migrations.Utilities.IndentedTextWriter)">[m
+[31m-            <summary>[m
+[31m-            Call this method to generate SQL that will attempt to drop the default constraint created[m
+[31m-            when a column is created. This method is usually called by code that overrides the creation or[m
+[31m-            altering of columns.[m
+[31m-            </summary>[m
+[31m-            <param name="table">The table to which the constraint applies.</param>[m
+[31m-            <param name="column">The column to which the constraint applies.</param>[m
+[31m-            <param name="writer">The writer to which generated SQL should be written.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.DropTableOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.DropTableOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="dropTableOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.SqlOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.SqlOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="sqlOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.RenameColumnOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.RenameColumnOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="renameColumnOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.RenameIndexOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.RenameIndexOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="renameIndexOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.RenameTableOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.RenameTableOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="renameTableOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.RenameProcedureOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified rename procedure operation.[m
+[31m-            </summary>[m
+[31m-            <param name="renameProcedureOperation">The rename procedure operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.MoveProcedureOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates the specified move procedure operation.[m
+[31m-            </summary>[m
+[31m-            <param name="moveProcedureOperation">The move procedure operation.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.MoveTableOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.MoveTableOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="moveTableOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.ColumnModel,System.Data.Entity.Migrations.Utilities.IndentedTextWriter)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for the given column model. This method is called by other methods that[m
+[31m-            process columns and can be overridden to change the SQL generated.[m
+[31m-            </summary>[m
+[31m-            <param name="column">The column for which SQL is being generated.</param>[m
+[31m-            <param name="writer">The writer to which generated SQL should be written.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Migrations.Model.HistoryOperation)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL for a <see cref="T:System.Data.Entity.Migrations.Model.HistoryOperation"/>.[m
+[31m-            Generated SQL should be added using the Statement method.[m
+[31m-            </summary>[m
+[31m-            <param name="historyOperation"> The operation to produce SQL for. </param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Byte[])">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant byte[] default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Boolean)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant bool default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.DateTime)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant DateTime default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.DateTimeOffset)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant DateTimeOffset default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Guid)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant Guid default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.String)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant string default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.TimeSpan)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant TimeSpan default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant geogrpahy default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Data.Entity.Spatial.DbGeometry)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant geometry default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Generate(System.Object)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify a constant default value being set on a column.[m
+[31m-            This method just generates the actual value, not the SQL to set the default value.[m
+[31m-            </summary>[m
+[31m-            <param name="defaultValue"> The value to be set. </param>[m
+[31m-            <returns> SQL representing the default value. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.BuildColumnType(System.Data.Entity.Migrations.Model.ColumnModel)">[m
+[31m-            <summary>[m
+[31m-            Generates SQL to specify the data type of a column.[m
+[31m-            This method just generates the actual type, not the SQL to create the column.[m
+[31m-            </summary>[m
+[31m-            <param name="columnModel"> The definition of the column. </param>[m
+[31m-            <returns> SQL representing the data type. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Name(System.String)">[m
+[31m-            <summary>[m
+[31m-            Generates a quoted name. The supplied name may or may not contain the schema.[m
+[31m-            </summary>[m
+[31m-            <param name="name"> The name to be quoted. </param>[m
+[31m-            <returns> The quoted name. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Quote(System.String)">[m
+[31m-            <summary>[m
+[31m-            Quotes an identifier for SQL Server.[m
+[31m-            </summary>[m
+[31m-            <param name="identifier"> The identifier to be quoted. </param>[m
+[31m-            <returns> The quoted identifier. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Statement(System.String,System.Boolean,System.String)">[m
+[31m-            <summary>[m
+[31m-            Adds a new Statement to be executed against the database.[m
+[31m-            </summary>[m
+[31m-            <param name="sql"> The statement to be executed. </param>[m
+[31m-            <param name="suppressTransaction"> Gets or sets a value indicating whether this statement should be performed outside of the transaction scope that is used to make the migration process transactional. If set to true, this operation will not be rolled back if the migration process fails. </param>[m
+[31m-            <param name="batchTerminator">The batch terminator for the database provider.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Writer">[m
+[31m-            <summary>[m
+[31m-            Gets a new <see cref="T:System.Data.Entity.Migrations.Utilities.IndentedTextWriter"/> that can be used to build SQL.[m
+[31m-            This is just a helper method to create a writer. Writing to the writer will[m
+[31m-            not cause SQL to be registered for execution. You must pass the generated[m
+[31m-            SQL to the Statement method.[m
+[31m-            </summary>[m
+[31m-            <returns> An empty text writer to use for SQL generation. </returns>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.Statement(System.Data.Entity.Migrations.Utilities.IndentedTextWriter,System.String)">[m
+[31m-            <summary>[m
+[31m-            Adds a new Statement to be executed against the database.[m
+[31m-            </summary>[m
+[31m-            <param name="writer"> The writer containing the SQL to be executed. </param>[m
+[31m-            <param name="batchTerminator">The batch terminator for the database provider.</param>[m
+[31m-        </member>[m
+[31m-        <member name="P:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator.GuidColumnDefault">[m
+[31m-            <summary>[m
+[31m-            Returns the column default value to use for store-generated GUID columns when[m
+[31m-            no default value is explicitly specified in the migration.[m
+[31m-            Returns newsequentialid() for on-premises SQL Server 2005 and later.[m
+[31m-            Returns newid() for SQL Azure.[m
+[31m-            </summary>[m
+[31m-            <value>Either newsequentialid() or newid() as described above.</value>[m
+[31m-        </member>[m
+[31m-        <member name="T:System.Data.Entity.SqlServer.SqlSpatialFunctions">[m
+[31m-            <summary>[m
+[31m-            Contains function stubs that expose SqlServer methods in Linq to Entities.[m
+[31m-            </summary>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.PointGeography(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32})">[m
+[31m-            <summary>Constructs a geography instance representing a Point instance from its x and y values and a spatial reference ID (SRID). </summary>[m
+[31m-            <returns>The constructed geography instance.</returns>[m
+[31m-            <param name="latitude">The x-coordinate of the Point being generated.</param>[m
+[31m-            <param name="longitude">The y-coordinate of the Point being generated</param>[m
+[31m-            <param name="spatialReferenceId">The SRID of the geography instance.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.AsTextZM(System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>Returns the Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance augmented with any Z (elevation) and M (measure) values carried by the instance.</summary>[m
+[31m-            <returns>The Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.BufferWithTolerance(System.Data.Entity.Spatial.DbGeography,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns a geometric object representing the union of all point values whose distance from a geography instance is less than or equal to a specified value, allowing for a specified tolerance.</summary>[m
+[31m-            <returns>The union of all point values whose distance from a geography instance is less than or equal to a specified value</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-            <param name="distance">The distance.</param>[m
+[31m-            <param name="tolerance">The specified tolerance.</param>[m
+[31m-            <param name="relative">Specifying whether the tolerance value is relative or absolute.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.EnvelopeAngle(System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>Returns the maximum angle between the point returned by EnvelopeCenter() and a point in the geography instance in degrees.</summary>[m
+[31m-            <returns>the maximum angle between the point returned by EnvelopeCenter().</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.EnvelopeCenter(System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>Returns a point that can be used as the center of a bounding circle for the geography instance.</summary>[m
+[31m-            <returns>A SqlGeography value that specifies the location of the center of a bounding circle.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.Filter(System.Data.Entity.Spatial.DbGeography,System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeography instance, assuming an index is available.</summary>[m
+[31m-            <returns>True if a geography instance potentially intersects another SqlGeography instance; otherwise, false.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-            <param name="geographyOther">Another geography instance to compare against the instance on which Filter is invoked.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.InstanceOf(System.Data.Entity.Spatial.DbGeography,System.String)">[m
+[31m-            <summary>Tests if the SqlGeography instance is the same as the specified type.</summary>[m
+[31m-            <returns>A string that specifies one of the 12 types exposed in the geography type hierarchy.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-            <param name="geometryTypeName">A string that specifies one of the 12 types exposed in the geography type hierarchy.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.NumRings(System.Data.Entity.Spatial.DbGeography)">[m
+[31m-            <summary>Returns the total number of rings in a Polygon instance.</summary>[m
+[31m-            <returns>The total number of rings.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.Reduce(System.Data.Entity.Spatial.DbGeography,System.Nullable{System.Double})">[m
+[31m-            <summary>Returns an approximation of the given geography instance produced by running the Douglas-Peucker algorithm on the instance with the given tolerance.</summary>[m
+[31m-            <returns>[m
+[31m-            Returns <see cref="T:System.Data.Entity.Spatial.DbGeography" />.[m
+[31m-            </returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-            <param name="tolerance">The tolerance to input to the Douglas-Peucker algorithm. tolerance must be a positive number.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.RingN(System.Data.Entity.Spatial.DbGeography,System.Nullable{System.Int32})">[m
+[31m-            <summary>Returns the specified ring of the SqlGeography instance: 1 ≤ n ≤ NumRings().</summary>[m
+[31m-            <returns>A SqlGeography object that represents the ring specified by n.</returns>[m
+[31m-            <param name="geographyValue">The geography value.</param>[m
+[31m-            <param name="index">An int expression between 1 and the number of rings in a polygon instance.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.PointGeometry(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32})">[m
+[31m-            <summary>Constructs a geometry instance representing a Point instance from its x and y values and a spatial reference ID (SRID). </summary>[m
+[31m-            <returns>The constructed geometry instance.</returns>[m
+[31m-            <param name="xCoordinate">The x-coordinate of the Point being generated.</param>[m
+[31m-            <param name="yCoordinate">The y-coordinate of the Point being generated</param>[m
+[31m-            <param name="spatialReferenceId">The SRID of the geography instance.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.AsTextZM(System.Data.Entity.Spatial.DbGeometry)">[m
+[31m-            <summary>Returns the Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance augmented with any Z (elevation) and M (measure) values carried by the instance.</summary>[m
+[31m-            <returns>The Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geometry instance.</returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.BufferWithTolerance(System.Data.Entity.Spatial.DbGeometry,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean})">[m
+[31m-            <summary>Returns a geometric object representing the union of all point values whose distance from a geometry instance is less than or equal to a specified value, allowing for a specified tolerance.</summary>[m
+[31m-            <returns>The union of all point values whose distance from a geometry instance is less than or equal to a specified value</returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-            <param name="distance">The distance.</param>[m
+[31m-            <param name="tolerance">The specified tolerance.</param>[m
+[31m-            <param name="relative">Specifying whether the tolerance value is relative or absolute.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.InstanceOf(System.Data.Entity.Spatial.DbGeometry,System.String)">[m
+[31m-            <summary>Tests if the SqlGeometry instance is the same as the specified type.</summary>[m
+[31m-            <returns>A string that specifies one of the 12 types exposed in the geography type hierarchy.</returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-            <param name="geometryTypeName">A string that specifies one of the 12 types exposed in the geography type hierarchy.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.Filter(System.Data.Entity.Spatial.DbGeometry,System.Data.Entity.Spatial.DbGeometry)">[m
+[31m-            <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeometry instance, assuming an index is available.</summary>[m
+[31m-            <returns>True if a geography instance potentially intersects another SqlGeography instance; otherwise, false.</returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-            <param name="geometryOther">Another geography instance to compare against the instance on which Filter is invoked.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.MakeValid(System.Data.Entity.Spatial.DbGeometry)">[m
+[31m-            <summary>Converts an invalid geometry instance into a geometry instance with a valid Open Geospatial Consortium (OGC) type. </summary>[m
+[31m-            <returns>The converted geometry instance.</returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-        </member>[m
+[31m-        <member name="M:System.Data.Entity.SqlServer.SqlSpatialFunctions.Reduce(System.Data.Entity.Spatial.DbGeometry,System.Nullable{System.Double})">[m
+[31m-            <summary>Returns an approximation of the given geography instance produced by running the Douglas-Peucker algorithm on the instance with the given tolerance.</summary>[m
+[31m-            <returns>[m
+[31m-            Returns <see cref="T:System.Data.Entity.Spatial.DbGeometry" />.[m
+[31m-            </returns>[m
+[31m-            <param name="geometryValue">The geometry value.</param>[m
+[31m-            <param name="tolerance">The tolerance to input to the Douglas-Peucker algorithm. tolerance must be a positive number.</param>[m
+[31m-        </member>[m
+[31m-        <member name="T:System.Data.Entity.SqlServer.SqlProviderServices">[m
+[31m-            <summary>[m
+[31m-            The DbProviderServices implementation for the SqlClient provider for SQL Server.[m
+[31m-            </summary>[m
+[31m-            <remarks>[m
+[31m-            Note that instance of this type also resolve additional provider services for Microsoft SQL Server[m
+[31m-            when this type is registered as an EF provider either using an entry in the application's config file[m
+[31m-            or through code-based registration in <see cref="T:System.Data.Entity.DbConfiguration"/>.[m
+[31m-            The services resolved are:[m
+[31m-            Requests for <see cref="T:System.Data.Entity.Infrastructure.IDbConnectionFactory"/> are resolved to a Singleton instance of[m
+[31m-            <see cref="T:System.Data.Entity.Infrastructure.SqlConnectionFactory"/> to create connections to SQL Express by default.[m
+[31m-            Requests for <see cref="T:System.Func`1"/> for the invariant name "System.Data.SqlClient"[m
+[31m-            for any server name are resolved to a delegate that returns a <see cref="T:System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy"/>[m
+[31m-            to provide a non-retrying policy for SQL Server.[m
+[31m-            Requests for <see cref="T:System.Data.Entity.Migrations.Sql.MigrationSqlGenerator"/> for the invariant name "System.Data.SqlClient" are[m
+[31m-            resolved to <see cref="T:System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator"/> instances to provide default Migrations SQL[m
+[31m-            generation for SQL Server.[m
+[31m-            Requests for <see cref="T:System.Data.Entity.Spatial.DbSpatialServices"/> for the invariant name "System.Data.SqlClient" are[m
+[31m-            resolved to a Singleton instance of <see cref="T:System.Data.Entity.SqlServer.SqlSpatialServices"/> to provide default spatial[m
+[31m-            services for SQL Server.[m
+[31m-            </remarks>[m
+[31m-        </member>[m
+[31m-        <member name="F:System.Data.Entity.SqlServer.SqlProviderServices.
